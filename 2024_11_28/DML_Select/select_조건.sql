@@ -62,3 +62,4 @@ WHERE c.`Continent` = 'asia'
 SELECT c.`Name`, c.`LifeExpectancy`, c.`Continent` FROM country c
 WHERE c.`Continent` = 'Oceania'
 AND c.`LifeExpectancy` IS null;
+
