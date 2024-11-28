@@ -39,17 +39,17 @@ SELECT `Region`, AVG(`GNP`)
 FROM country
 WHERE `Continent` = 'asia'
 GROUP BY `Region`
-HAVING AVG(`GNP`) > 10000;
+HAVING AVG(`GNP`) >= 1000;
 
 -- 독립년도가 1900년 이후인 국가들 중에서, 대륙별 평균 기대수명이 70세 이상인 Continent, 평균 기대수명을 조회하시오. - country
 SELECT `Continent`, AVG(`LifeExpectancy`) as 기대수명
 FROM country
 WHERE `IndepYear` > 1900
 GROUP BY `Continent`
-HAVING avg(`LifeExpectancy`) > 70
+HAVING avg(`LifeExpectancy`) >= 70
 
 -- CountryCode별 도시 평균 인구가 100만 이상이고 도시 최소 인구가 50만 이상인 CountryCode, 총 도시수, 총 인구수를 조회하시오. - city
-SELECT `CountryCode`, COUNT(*), SUM(`Population`)
+SELECT `CountryCode`, COUNT(*) '총 도시수', SUM(`Population`) '총 인구수'
 FROM city
 GROUP BY `CountryCode`
 HAVING AVG(`Population`) >= 1000000
