@@ -23,7 +23,7 @@ FROM country
 WHERE Population >= 10000000 
 GROUP BY Continent;
 
---------------------------실습--------------------------
+---------------------------실습---------------------------
 
 -- 대륙별 총 인구수를 구하시오.
 SELECT `Continent`, SUM(`Population`) total_pop
