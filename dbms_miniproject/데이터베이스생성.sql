@@ -1,1 +1,1 @@
-CREATE DATABASE mini_db;
+CREATE DATABASE mini_db; 
