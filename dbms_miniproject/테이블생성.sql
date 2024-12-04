@@ -472,3 +472,4 @@ ALTER TABLE `lecture_meta` ADD CONSTRAINT `FK_lecture_TO_lecture_meta_1` FOREIGN
 REFERENCES `lecture` (
 	`lecture_id`
 );
+
