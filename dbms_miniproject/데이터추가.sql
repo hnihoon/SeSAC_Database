@@ -50,3 +50,4 @@ VALUES(1,1,'영어강의1', '영어강의1내용','16:04' , now())
 
 INSERT INTO lecture_meta
 VALUES(1,1,'영어강의자료1', '영어강의자료1',now(), '강의자료링크')
+
